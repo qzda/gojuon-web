@@ -1,4 +1,4 @@
-import type { Cell } from "./type";
+import type { Cell } from '@/type'
 
 export const 清音: (Cell | null)[][] = [
   [
@@ -64,21 +64,9 @@ export const 清音: (Cell | null)[][] = [
     { hiragana: 'れ', katakana: 'レ' },
     { hiragana: 'ろ', katakana: 'ロ' },
   ],
-  [
-    { hiragana: 'わ', katakana: 'ワ' },
-    null,
-    null,
-    null,
-    { hiragana: 'を', katakana: 'ヲ' },
-  ],
-  [
-    { hiragana: 'ん', katakana: 'ン' },
-    null,
-    null,
-    null,
-    null,
-  ],
-];
+  [{ hiragana: 'わ', katakana: 'ワ' }, null, null, null, { hiragana: 'を', katakana: 'ヲ' }],
+  [{ hiragana: 'ん', katakana: 'ン' }, null, null, null, null],
+]
 
 export const 濁音: Cell[][] = [
   [
@@ -116,8 +104,7 @@ export const 濁音: Cell[][] = [
     { hiragana: 'ぺ', katakana: 'ペ' },
     { hiragana: 'ぽ', katakana: 'ポ' },
   ],
-];
-
+]
 
 export const 拗音: Cell[][] = [
   [
@@ -155,4 +142,4 @@ export const 拗音: Cell[][] = [
     { hiragana: 'りゅ', katakana: 'リュ' },
     { hiragana: 'りょ', katakana: 'リョ' },
   ],
-];
+]
