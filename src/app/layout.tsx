@@ -4,7 +4,7 @@ import "./globals.css";
 
 const fontDefautl = Zen_Old_Mincho({
   weight: ["400", "700"],
-  variable: "--font-jp",
+  variable: "--font-default",
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={`${fontDefautl.variable} antialiased`}>{children}</body>
     </html>
   );

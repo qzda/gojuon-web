@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
+  --background: #fdf2f8;
   --foreground: #fecaca;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-jp: var(--font-jp);
+  --font-default: var(--font-default);
 }
 
 @media (prefers-color-scheme: dark) {
