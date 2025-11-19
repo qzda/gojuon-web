@@ -1,19 +1,35 @@
 import { 拗音, 清音, 濁音 } from "@/data";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex h-screen justify-center font-default">
-      <main className="text-xl lg:text-2xl h-full w-full max-w-5xl flex flex-col gap-2 px-10 py-6">
+    <div className="h-screen flex flex-col justify-center">
+      <main className="font-default text-xl md:text-2xl lg:text-3xl h-full w-full max-w-5xl flex flex-col gap-2 px-10 py-6">
         <Tabs
           defaultValue="清音"
           className="w-full flex-auto"
         >
-          <div className="flex justify-center sm:justify-start mb-4">
-            <TabsList className="">
-              <TabsTrigger value="清音">清音</TabsTrigger>
-              <TabsTrigger value="濁音">濁音</TabsTrigger>
-              <TabsTrigger value="拗音">拗音</TabsTrigger>
+          <div className="flex justify-center mb-4">
+            <TabsList>
+              <TabsTrigger
+                value="清音"
+                className="cursor-pointer"
+              >
+                清音
+              </TabsTrigger>
+              <TabsTrigger
+                value="濁音"
+                className="cursor-pointer"
+              >
+                濁音
+              </TabsTrigger>
+              <TabsTrigger
+                value="拗音"
+                className="cursor-pointer"
+              >
+                拗音
+              </TabsTrigger>
             </TabsList>
           </div>
 
@@ -93,6 +109,15 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
+
+      <footer className="text-center text-sm p-6">
+        <Link
+          href="https://ja.wikipedia.org/wiki/五十音"
+          target="_blank"
+        >
+          Wiki
+        </Link>
+      </footer>
     </div>
   );
 }
