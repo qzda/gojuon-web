@@ -1,13 +1,8 @@
-export interface Timestamp {
-  start: number
-  end: number
-}
-
 export interface Cell {
   /** 平假名 */
-  hiragana: string
+  hiragana: string;
   /** 片假名 */
-  katakana: string
+  katakana: string;
 }
 
 /** 显示模式：
@@ -15,4 +10,4 @@ export interface Cell {
  *  @key hiragana 平假名
  *  @key katakana 片假名
  */
-export type DisplayMode = 'both' | 'hiragana' | 'katakana'
+export type DisplayMode = "both" | "hiragana" | "katakana";
