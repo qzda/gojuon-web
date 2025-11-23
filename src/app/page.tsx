@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="h-screen flex flex-col justify-center">
-      <main className="font-default text-xl md:text-2xl lg:text-3xl h-full w-full max-w-5xl flex flex-col gap-2 px-10 py-6">
+      <main className="font-default text-xl md:text-2xl lg:text-3xl h-full w-full max-w-5xl flex flex-col gap-2 px-10 py-6 mx-auto">
         <Tabs
           defaultValue="清音"
           className="w-full flex-auto"
