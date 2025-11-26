@@ -7,8 +7,6 @@ import "./globals.css";
 
 const fontDefautl = Zen_Old_Mincho({
   weight: ["400", "700"],
-  variable: "--font-default",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +25,9 @@ export default function RootLayout({
       lang="ja"
       suppressHydrationWarning
     >
-      <body className={`${fontDefautl.variable} antialiased overflow-hidden`}>
+      <body
+        className={`${fontDefautl.className} antialiased h-dvh min-w-[350px] overflow-hidden px-8 py-4`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

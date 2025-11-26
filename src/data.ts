@@ -1,18 +1,6 @@
-import type { Cell, DisplayMode } from "@/type";
+import type { Cell } from "@/type";
 
-export const displayMode: {
-  label: string;
-  value: DisplayMode;
-}[] = [
-  { label: "両方表示", value: "both" },
-  { label: "平仮名", value: "hiragana" },
-  {
-    label: "片仮名",
-    value: "katakana",
-  },
-];
-
-export const 清音: (Cell | null)[][] = [
+const 清音: (Cell | null)[][] = [
   [
     { hiragana: "あ", katakana: "ア" },
     { hiragana: "い", katakana: "イ" },
@@ -86,7 +74,7 @@ export const 清音: (Cell | null)[][] = [
   [{ hiragana: "ん", katakana: "ン" }, null, null, null, null],
 ];
 
-export const 濁音: Cell[][] = [
+const 濁音: Cell[][] = [
   [
     { hiragana: "が", katakana: "ガ" },
     { hiragana: "ぎ", katakana: "ギ" },
@@ -124,7 +112,7 @@ export const 濁音: Cell[][] = [
   ],
 ];
 
-export const 拗音: Cell[][] = [
+const 拗音: Cell[][] = [
   [
     { hiragana: "きゃ", katakana: "キャ" },
     { hiragana: "きゅ", katakana: "キュ" },
@@ -160,4 +148,10 @@ export const 拗音: Cell[][] = [
     { hiragana: "りゅ", katakana: "リュ" },
     { hiragana: "りょ", katakana: "リョ" },
   ],
+];
+
+export const Cells = [
+  { key: "清音", value: 清音 },
+  { key: "濁音", value: 濁音 },
+  { key: "拗音", value: 拗音 },
 ];
