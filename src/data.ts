@@ -150,8 +150,32 @@ const 拗音: Cell[][] = [
   ],
 ];
 
+const 濁拗音: Cell[][] = [
+  [
+    { hiragana: "ぎゃ", katakana: "ギャ" },
+    { hiragana: "ぎゅ", katakana: "ギュ" },
+    { hiragana: "ぎょ", katakana: "ギョ" },
+  ],
+  [
+    { hiragana: "じゃ", katakana: "ジャ" },
+    { hiragana: "じゅ", katakana: "ジュ" },
+    { hiragana: "じょ", katakana: "ジョ" },
+  ],
+  [
+    { hiragana: "びゃ", katakana: "ビャ" },
+    { hiragana: "びゅ", katakana: "ビュ" },
+    { hiragana: "びょ", katakana: "ビョ" },
+  ],
+  [
+    { hiragana: "ぴゃ", katakana: "ピャ" },
+    { hiragana: "ぴゅ", katakana: "ピュ" },
+    { hiragana: "ぴょ", katakana: "ピョ" },
+  ],
+];
+
 export const Cells = [
   { key: "清音", value: 清音 },
   { key: "濁音", value: 濁音 },
   { key: "拗音", value: 拗音 },
+  { key: "濁拗音", value: 濁拗音 },
 ];
