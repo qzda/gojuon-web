@@ -109,15 +109,6 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
-
-      <footer className="text-center text-sm p-6">
-        <Link
-          href="https://ja.wikipedia.org/wiki/五十音"
-          target="_blank"
-        >
-          Wiki
-        </Link>
-      </footer>
     </div>
   );
 }
