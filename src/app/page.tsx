@@ -8,7 +8,7 @@ export default function Home() {
         defaultValue="清音"
         className="w-full flex-auto"
       >
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-4 select-none">
           <TabsList>
             {Cells.map(({ key }) => (
               <TabsTrigger
@@ -37,7 +37,7 @@ export default function Home() {
                   {row.map((col, colIndex) => {
                     return (
                       <div key={colIndex}>
-                        <span className="cursor-pointer">
+                        <span className="cursor-pointer hover:text-sakura">
                           {col ? `${col.hiragana} ${col.katakana}` : ""}
                         </span>
                       </div>
